@@ -5,7 +5,7 @@ head
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name='description' content='')
     meta(name='author' content='아름고 2421113')
-    title 사이트 템플릿 &middot; Bootstrap v5.3
+    title &#xC0AC;&#xC774;&#xD2B8; &#xD15C;&#xD50C;&#xB9BF; &middot; Bootstrap v5.3
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@docsearch/css@3')
     link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous')
     style.
@@ -77,8 +77,6 @@ head
         }
     // Custom styles for this template
     link(href='/public/stylesheets/carousel.css' rel='stylesheet')
-
-
 svg.d-none(xmlns='http://www.w3.org/2000/svg')
     symbol#check2(viewbox='0 0 16 16')
         path(d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z')
@@ -89,139 +87,136 @@ svg.d-none(xmlns='http://www.w3.org/2000/svg')
         path(d='M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z')
     symbol#sun-fill(viewbox='0 0 16 16')
         path(d='M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z')
-
-
 .dropdown.position-fixed.bottom-0.end-0.mb-3.me-3.bd-mode-toggle
-    button#bd-theme.btn.btn-bd-primary.py-2.dropdown-toggle.d-flex.align-items-center(type='button' aria-expanded='false' data-bs-toggle='dropdown' aria-label='테마 변경 (자동)')
+    button#bd-theme.btn.btn-bd-primary.py-2.dropdown-toggle.d-flex.align-items-center(type='button' aria-expanded='false' data-bs-toggle='dropdown' aria-label='Toggle theme (auto)')
         svg.bi.my-1.theme-icon-active(width='1em' height='1em')
             use(href='#circle-half')
-        span#bd-theme-text.visually-hidden 테마 변경
+        span#bd-theme-text.visually-hidden Toggle theme
     ul.dropdown-menu.dropdown-menu-end.shadow(aria-labelledby='bd-theme-text')
         li
             button.dropdown-item.d-flex.align-items-center(type='button' data-bs-theme-value='light' aria-pressed='false')
                 svg.bi.me-2.opacity-50(width='1em' height='1em')
                     use(href='#sun-fill')
-                |             라이트 모드
+                |             Light
                 svg.bi.ms-auto.d-none(width='1em' height='1em')
                     use(href='#check2')
         li
             button.dropdown-item.d-flex.align-items-center(type='button' data-bs-theme-value='dark' aria-pressed='false')
                 svg.bi.me-2.opacity-50(width='1em' height='1em')
                     use(href='#moon-stars-fill')
-                |             다크 모드
+                |             Dark
                 svg.bi.ms-auto.d-none(width='1em' height='1em')
                     use(href='#check2')
         li
             button.dropdown-item.d-flex.align-items-center.active(type='button' data-bs-theme-value='auto' aria-pressed='true')
                 svg.bi.me-2.opacity-50(width='1em' height='1em')
                     use(href='#circle-half')
-                |             자동 모드
+                |             Auto
                 svg.bi.ms-auto.d-none(width='1em' height='1em')
                     use(href='#check2')
 header(data-bs-theme='dark')
     nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
         .container-fluid
-            a.navbar-brand(href='#') 아름고등학교
-            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='토글 네비게이션')
+            a.navbar-brand(href='#') Carousel
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarCollapse.collapse.navbar-collapse
                 ul.navbar-nav.me-auto.mb-2.mb-md-0
                     li.nav-item
-                        a.nav-link.active(aria-current='page' href='#') 홈
+                        a.nav-link.active(aria-current='page' href='#') Home
                     li.nav-item
-                        a.nav-link(href='#') 링크
+                        a.nav-link(href='#') Link
                     li.nav-item
-                        a.nav-link.disabled(aria-disabled='true') 비활성화
+                        a.nav-link.disabled(aria-disabled='true') Disabled
                 form.d-flex(role='search')
-                    input.form-control.me-2(type='search' placeholder='검색' aria-label='검색')
-                    button.btn.btn-outline-success(type='submit' style='min-width: 60px;') 검색
+                    input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                    button.btn.btn-outline-success(type='submit') Search
 main
     #myCarousel.carousel.slide.mb-6(data-bs-ride='carousel')
         .carousel-indicators
-            button.active(type='button' data-bs-target='#myCarousel' data-bs-slide-to='0' aria-current='true' aria-label='슬라이드 1')
-            button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='1' aria-label='슬라이드 2')
-            button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='2' aria-label='슬라이드 3')
+            button.active(type='button' data-bs-target='#myCarousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+            button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='1' aria-label='Slide 2')
+            button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='2' aria-label='Slide 3')
         .carousel-inner
             .carousel-item.active
                 svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveaspectratio='xMidYMid slice' focusable='false')
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
                 .container
                     .carousel-caption.text-start
-                        h1 예시 제목
-                        p.opacity-75 Carousel 첫 슬라이드에 대한 대표적인 플레이스홀더 콘텐츠입니다.
+                        h1 Example headline.
+                        p.opacity-75 Some representative placeholder content for the first slide of the carousel.
                         p
-                            a.btn.btn-lg.btn-primary(href='#') 지금 가입하세요
+                            a.btn.btn-lg.btn-primary(href='#') Sign up today
             .carousel-item
                 svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveaspectratio='xMidYMid slice' focusable='false')
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
                 .container
                     .carousel-caption
-                        h1 또 다른 예시 제목
-                        p Carousel 두 번째 슬라이드에 대한 대표적인 플레이스홀더 콘텐츠입니다.
+                        h1 Another example headline.
+                        p Some representative placeholder content for the second slide of the carousel.
                         p
-                            a.btn.btn-lg.btn-primary(href='#') 더 알아보기
+                            a.btn.btn-lg.btn-primary(href='#') Learn more
             .carousel-item
                 svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveaspectratio='xMidYMid slice' focusable='false')
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
                 .container
                     .carousel-caption.text-end
-                        h1 마지막으로 하나 더
-                        p Carousel 세 번째 슬라이드에 대한 대표적인 플레이스홀더 콘텐츠입니다.
+                        h1 One more for good measure.
+                        p Some representative placeholder content for the third slide of this carousel.
                         p
-                            a.btn.btn-lg.btn-primary(href='#') 갤러리 보기
+                            a.btn.btn-lg.btn-primary(href='#') Browse gallery
         button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
             span.carousel-control-prev-icon(aria-hidden='true')
-            span.visually-hidden 이전
+            span.visually-hidden Previous
         button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
-            span.visually-hidden 다음
+            span.visually-hidden Next
     //
-      마케팅 메시지 및 특집 기사
+      Marketing messaging and featurettes
       ==================================================
-    // 나머지 페이지 내용을 중앙에 배치하기 위한 또 다른 컨테이너로 감쌉니다.
+    // Wrap the rest of the page in another container to center all the content.
     .container.marketing
-        // 캐러셀 아래의 세 개의 텍스트 열
+        // Three columns of text below the carousel
         .row
             .col-lg-4
                 svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
-                h2.fw-normal 제목
+                h2.fw-normal Heading
                 p
-                    | Carousel 아래의 세 개의 텍스트 열에 대한 대표적인 placeholder 콘텐츠입니다. 이것은 첫 번째 열입니다.
+                    | Some representative placeholder content for the three columns of text below the carousel. This is the first column.
                 p
-                    a.btn.btn-secondary(href='#') 자세히 보기 &raquo;
+                    a.btn.btn-secondary(href='#') View details &raquo;
             // /.col-lg-4
             .col-lg-4
                 svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
-                h2.fw-normal 제목
+                h2.fw-normal Heading
                 p
-                    | 이번에는 두 번째 열로 이동하여 또 다른 흥미로운 placeholder 콘텐츠를 제공합니다.
+                    | Another exciting bit of representative placeholder content. This time, we&apos;ve moved on to the second column.
                 p
-                    a.btn.btn-secondary(href='#') 자세히 보기 &raquo;
+                    a.btn.btn-secondary(href='#') View details &raquo;
             // /.col-lg-4
             .col-lg-4
                 svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
                     rect(width='100%' height='100%' fill='var(--bs-secondary-color)')
-                h2.fw-normal 제목
-                p 마지막으로 이 세 번째 열에 대한 대표적인 placeholder 콘텐츠입니다.
+                h2.fw-normal Heading
+                p And lastly this, the third column of representative placeholder content.
                 p
-                    a.btn.btn-secondary(href='#') 자세히 보기 &raquo;
+                    a.btn.btn-secondary(href='#') View details &raquo;
             // /.col-lg-4
         // /.row
-        // 특집 기사 시작
+        // START THE FEATURETTES
         hr.featurette-divider
         .row.featurette
             .col-md-7
                 h2.featurette-heading.fw-normal.lh-1
-                    | 첫 번째 특집 기사 제목.
-                    br
-                    span.text-body-secondary 이건 정말 대단합니다.
+                    | First featurette heading.
+                    span.text-body-secondary It&rsquo;ll blow your mind.
                 p.lead
-                    | 첫 번째 특집 기사에 대한 훌륭한 placeholder 콘텐츠입니다. 여기에 흥미로운 문장을 상상해보세요.
+                    | Some great placeholder content for the first featurette here. Imagine some exciting prose here.
             .col-md-5
                 svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
@@ -231,11 +226,10 @@ main
         .row.featurette
             .col-md-7.order-md-2
                 h2.featurette-heading.fw-normal.lh-1
-                    | 이건 정말 좋군요!
-                    br
-                    span.text-body-secondary 직접 확인해보세요.
+                    | Oh yeah, it&rsquo;s that good.
+                    span.text-body-secondary See for yourself.
                 p.lead
-                    | 또 다른 특집 기사? 물론입니다. 여기에서 이 레이아웃이 실제 콘텐츠와 함께 작동하는 방식에 대한 아이디어를 제공하기 위해 더 많은 콘텐츠를 제공합니다.
+                    | Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
             .col-md-5.order-md-1
                 svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
@@ -245,26 +239,25 @@ main
         .row.featurette
             .col-md-7
                 h2.featurette-heading.fw-normal.lh-1
-                    | 그리고 마지막으로,
-                    br
-                    span.text-body-secondary 체크메이트
+                    | And lastly, this one.
+                    span.text-body-secondary Checkmate.
                 p.lead
-                    | 네, 이것이 마지막 대표 placeholder 콘텐츠 블록입니다. 다시 말하지만, 실제로 읽히도록 의도된 것이 아니라, 실제 콘텐츠가 포함된 상태에서의 모습에 대한 더 나은 시각을 제공하기 위한 것입니다. 귀하의 콘텐츠 기입.
+                    | And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.
             .col-md-5
                 svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveaspectratio='xMidYMid slice' focusable='false')
                     title Placeholder
                     rect(width='100%' height='100%' fill='var(--bs-secondary-bg)')
                     text(x='50%' y='50%' fill='var(--bs-secondary-color)' dy='.3em') 500x500
         hr.featurette-divider
-        // 특집 기사 끝
+        // /END THE FEATURETTES
     // /.container
     // FOOTER
     footer.container
         p.float-end
-            a(href='#') 위로 가기
+            a(href='#') Back to top
         p
-            | &copy; 2024&ndash;2024 Company, Inc. &middot;
-            a(href='#') 개인정보처리방침
+            | &copy; 2017&ndash;2024 Company, Inc. &middot;
+            a(href='#') Privacy
             |  &middot;
-            a(href='#') 이용약관
+            a(href='#') Terms
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous')
